@@ -1,0 +1,12 @@
+!!! 5
+%html
+%head
+  %title HardToDo - Ember
+  = stylesheet_link_tag    "application", media: "all"
+  = javascript_include_tag "application"
+  = javascript_include_tag "ember_framework"
+  = csrf_meta_tags
+%body
+  = render partial: "menu"
+  #application
+    = yield

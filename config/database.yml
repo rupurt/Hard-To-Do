@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: hard_to_do_development
+  user: <%= `whoami` %>
+  password:
+
+test:
+  adapter: postgresql
+  database: hard_to_do_test
+  user: <%= `whoami` %>
+  password:
+
+production:
+  adapter: postgresql
+  database: hard_to_do_production
+  user: <%= `whoami` %>
+  password:
