@@ -1,11 +1,15 @@
 <header>
   <h1>Hey there, aren't these people cool?</h1>
-
+  {{#linkTo "people.new"}}
+    Let me show you who's cool!
+  {{/linkTo}}
 </header>
 <ul>
   {{#each controller}}
-    {{partial "person"}}
+    {{partial "people/person"}}
   {{else}}
-    {{partial "noPeople"}}
+    {{partial "people/noPeople"}}
   {{/each}}
 </ul>
+
+{{outlet newPerson}}

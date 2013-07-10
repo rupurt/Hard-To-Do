@@ -1,0 +1,25 @@
+<div>
+  <p>
+    <label for="first_name">First Name:</label>
+    {{input type="text" id="first_name" valueBinding="firstName"}}
+  </p>
+  <p>
+    <label for="last_name">Last Name:</label>
+    {{input type="text" id="last_name" valueBinding="lastName"}}
+  </p>
+  <p>
+    <label for="sex">Sex:</label>
+    {{input type="text" id="sex" valueBinding="sex"}}
+  </p>
+  <p>
+    <label for="email">Email:</label>
+    {{input type="text" id="email" valueBinding="email"}}
+  </p>
+  <p>
+    <label for="claim_to_fame">Claim To Fame:</label>
+    {{input type="text" id="claim_to_fame" valueBinding="claimToFame"}}
+  </p>
+  <p>
+    <button {{action createPerson}}>Create</button>
+  </p>
+</div>
